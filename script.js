@@ -20,13 +20,7 @@ function validateForm() {
     }
 
     
-    var phoneField = form.elements['phone'];
-    var phoneRegex = /^\(\d{3}\) \d{3}-\d{4}$/;
-    if (!phoneRegex.test(phoneField.value)) {
-        alert('Please enter a valid phone number in the format (123) 456-7890');
-        phoneField.focus();
-        return false;
-    }
+
 
    
     var eventDateField = form.elements['eventDate'];
