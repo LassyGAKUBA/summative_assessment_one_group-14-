@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Event Registration Form</h2>
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" pattern="[A-Za-z ]+" title="Letters and spaces only" required><br>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" pattern="\(\d{3}\) \d{3}-\d{4}" title="Format: (123) 456-7890" required><br>
+            </div>
+            <div class="form-group">
+                <label for="eventDate">Event Date:</label>
+                <input type="text" id="eventDate" name="eventDate" pattern="\d{2}/\d{2}/\d{4}" placeholder="MM/DD/YYYY" title="Valid date in MM/DD/YYYY format" required>
+            </div>
+            <div class="form-group">
+                <label for="numTickets">Number of Tickets:</label>
+                <input type="number" id="numTickets" name="numTickets" min="1" max="10" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script> 
+</body>
+</html>
