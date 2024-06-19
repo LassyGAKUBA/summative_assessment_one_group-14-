@@ -6,9 +6,15 @@
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: Arial, sans-serif;
+
+
+}
+body {
+
     background-image: url(background1.jpg);
-
-
+    background-position: center;
+    padding: auto;
+    
 }
 
 
