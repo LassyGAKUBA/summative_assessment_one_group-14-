@@ -1,2 +1,1 @@
-# summative_assessment_one_group-14-
-form 
+our repository is an event registration form which allows a user to enter his/her username,email,phone number and is able to register for upcoming events
