@@ -64,6 +64,3 @@ button:hover {
     display: none;
 }
 
-#registrationForm: submit + #successMessage {
-    display: block;
-}

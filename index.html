@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,33 +13,44 @@
     <div class="container">
         <h2>Event Registration Form</h2>
         <form id="registrationForm" onsubmit="return validateForm()">
-            <div class="form-group">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" pattern="[A-Za-z ]+" title="Letters and spaces only" required><br>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required><br>
-            </div>
-            <div class="form-group">
-                <label for="eventDate">Event Date:</label>
-                <input type="int" id="eventDate" name="eventDate" pattern="\d{2}/\d{2}/\d{4}" placeholder="MM/DD/YYYY" title="Valid date in MM/DD/YYYY format" required>
-            </div>
-            <div class="form-group">
-                <label for="numTickets">Number of Tickets:</label>
-                <input type="number" id="numTickets" name="numTickets" min="1" max="10" required>
-            </div>
-            <div class="form-group">
-                <button type="submit">REGISTER</button>
-            </div>
-        </form>
-        <p id="successMessage" class="hidden"> Registration successful</p>
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" pattern="[A-Za-z ]+" title="Letters and spaces only" required><br>
+
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required><br>
+    </div>
+    <div class="form-group">
+        <label for="eventDate" > Event Date : </label>
+        <input type="int" id="eventDate" name="eventDate" pattern="\d{2}/\d{2}/\d{4}" placeholder="MM/DD/YYYY" title="Valid date in MM/DD/YYYY format" required>
+
+    </div>
+    <div class="form-group">
+        <label for="numTickets">Number of Tickets:</label>
+        <input type="number" id="numTickets" name="numTickets" min="1" max="10" required>
+    </div>
+<div class="form-group">
+    <button type="submit">REGISTER </button>
+
+</div>
+</form>
+
+<p id="successMessage" class="hidden"> Registration successful </p>
     </div>
 
-    <script src="script.js"></script> 
+<script src="script.js"></script>
+
 </body>
+
+
+
+
+
+
 </html>
