@@ -59,3 +59,11 @@ button:hover {
     margin-top: 20px;
     display: none;
 }
+
+.hidden {
+    display: none;
+}
+
+#registrationForm: submit + #successMessage {
+    display: block;
+}
