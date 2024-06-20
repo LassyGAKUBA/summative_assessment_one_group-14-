@@ -21,7 +21,6 @@ function validateForm() {
 
     
 
-
    
     var eventDateField = form.elements['eventDate'];
     var eventDateRegex = /^\d{2}\/\d{2}\/\d{4}$/;
