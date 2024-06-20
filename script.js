@@ -39,7 +39,6 @@ function validateForm() {
         numTicketsField.focus();
         return false;
     }
-
     
     return true;
 }
